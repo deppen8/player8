@@ -23,8 +23,9 @@ description: A project to study the wisdom of Arsenal fans
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "index.html"
-  Blog: "blog/index.html"
+  home: "index"
+  blog: "blog/index.html"
+  data: "data"
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
