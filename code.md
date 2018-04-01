@@ -9,6 +9,6 @@ The code used in the project is available here
 
 # `arserate.py`
 
-[HTML test](/code/html_test)
+[HTML test](/code/html_test.html)
 
-[markdown test](/code/markdown_test)
+[markdown test](/code/markdown_test.html)
