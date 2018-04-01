@@ -26,6 +26,7 @@ navbar-links:
   home: "index"
   blog: "blog/index.html"
   data: "data"
+  code: "code"
 #  About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
