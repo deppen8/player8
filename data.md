@@ -6,7 +6,7 @@ use-site-title: true
 ---
 
 ## Database schema
-Arseblog.com has a dedicated section for all of the Player Ratings posts. Each of these posts is formatted in similar ways, so I was able to write a Python web scraper script that, given the URL of the specific page, extracts the following information:
+Arseblog.com has a dedicated section for all of the [Player Ratings](https://news.arseblog.com/category/players/player-ratings/) posts. Each of these posts is formatted in similar ways, so I was able to write a Python web scraper script that, given the URL of the specific page, extracts the following information:
 - For each player that appeared in the match:
     - Player name (`name`)
     - Arseblog rating (`arseblograting`)
