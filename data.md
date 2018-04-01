@@ -5,7 +5,6 @@ subtitle: notes on the dataset
 use-site-title: true
 ---
 
-## Database schema
 Arseblog.com has a dedicated section for all of the [Player Ratings](https://news.arseblog.com/category/players/player-ratings/) posts. Each of these posts is formatted in similar ways, so I was able to write a Python web scraper script that, given the URL of the specific page, extracts the following information:
 - For each player that appeared in the match:
     - Player name (`name`)
@@ -32,7 +31,7 @@ I have since manually added the following info to the players table:
 - Nickname (`nickname`)
 - Less common positions (`rare_positions`)
 
-## Caveats
+# Caveats
 There are some minimal data checks built into the scraper code, but, in general, the data has not been thoroughly scrubbed or validated with any other sources; there could be errors anywhere. That said, here some places where you might expect to find errors or deviations from expectations, in no particular order:
 - The dataset begins in the middle of the 2013-14 season. More specifically, it starts with the first game of 2014, a 2-0 FA Cup victory over Spurs. This is when Arseblog began incorporating ratings from readers.
 - I have not accounted for neutral site games in the `home_away` field. The FA Cup finals at Wembley, for instance, are all recorded as home games.
