@@ -1,6 +1,17 @@
+# Licenses
+## Site and blog content
+The general site and blog content like text and images is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license.
+
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+## Project code
+The code associated with the project is licensed under the MIT License.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 The MIT License (MIT)
 
-Copyright (c) 2016 Dean Attali
+Copyright (c) 2018 Jacob Deppen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +30,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Site theme
+Information on the Beautiful Jekyll theme license is available [here](https://github.com/daattali/beautiful-jekyll/blob/master/LICENSE). 
