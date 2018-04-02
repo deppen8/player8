@@ -32,6 +32,7 @@ more about the players or more about the fans themselves. But in any case, I am 
 - using the ratings and machine learning to highlight those occassions when a win somehow feels like a loss
 - examining the performances in European knockout games
 - much more...
+
 ---
 A little more about me: I am working to finish my PhD in Anthropology/Archaeology from the University of Washington in Seattle, Washington, USA. You can read plenty more about
 my archaeological work on my [academic homepage](https://deppen8.github.io/). Along the way in my PhD program I picked up an interest in data science and 
