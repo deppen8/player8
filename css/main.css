@@ -88,6 +88,11 @@ img {
   max-width: 100%;
 }
 
+img + em {
+  display: block;
+  font-size: 12px;
+}
+
 .disqus-comments {
   margin-top: 30px;
 }
