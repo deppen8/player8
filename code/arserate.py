@@ -108,7 +108,15 @@ def arseblog_scrape(url, db):
                 opponent = home
                 arsegoals = away_score
                 oppgoals = home_score
-
+            
+            wld = None
+            if arsegoals > oppgoals:
+                wld = 'win'
+            elif arsegoals < oppgoals:
+                wld = 'loss'
+            else:
+                wld='draw'
+            
             game_date = soup.find(attrs={'class':'entry-date updated td-module-date'}).get_text()
 
             season = ''
@@ -137,9 +145,9 @@ def arseblog_scrape(url, db):
                 season = '2017-18'
             else:
                 season = 'NULL'
-
+            
             # insert the match info into the database
-            c.execute('INSERT OR IGNORE INTO games (season, competition, home_away, arsegoals, opponent, oppgoals, date, url) VALUES (?,?,?,?,?,?,?,?)', (season, competition, home_away, arsegoals, opponent, oppgoals, game_date, url))
+            c.execute('INSERT OR IGNORE INTO games (season, competition, home_away, arsegoals, opponent, oppgoals, date, url, wld) VALUES (?,?,?,?,?,?,?,?,?)', (season, competition, home_away, arsegoals, opponent, oppgoals, game_date, url, wld))
 
             # compile some text about the match for the output
             outputText = ''
@@ -288,7 +296,7 @@ def ready_df(db_path):
     merged = pd.merge(df_dict['players'], merged, how='outer', on='playerID')
 
     # preferred column order
-    col_order = ['playerID', 'gameID', 'date', 'season', 'competition', 'home_away', 'opponent', 'arsegoals','oppgoals', 'result', 'arseblograting', 'userrating', 'name', 'number', 'positions', 'natl_team', 'birthdate','academy_grad', 'nickname', 'rare_positions', 'url']
+    col_order = ['playerID', 'gameID', 'date', 'season', 'competition', 'home_away', 'opponent', 'arsegoals','oppgoals', 'wld', 'arseblograting', 'userrating', 'name', 'number', 'positions', 'natl_team', 'birthdate','academy_grad', 'nickname', 'rare_positions', 'url']
     
     outDF = merged[col_order]
     
@@ -312,7 +320,6 @@ def import_table(db_path, table_name='games'):
         The requested table, converted to a pandas DataFrame
     """
     # create DB connection
-    # '/Users/jacobdeppen/Dropbox/Player_ratings/db_files/ratings.db'
     conn = sqlite3.connect(db_path)
     table = None
     if table_name == 'games':
@@ -331,6 +338,36 @@ def import_table(db_path, table_name='games'):
         
     conn.close()
     return table
+
+##############################################################################
+
+def quick_summary(df, by='player'):
+    """Create a simple dataframe with some basic data for a particular set of appearances
+    
+    Parameters
+    ----------
+    df : pandas DataFrame
+        A dataframe where each row is a player appearance. Must have columns 'name',
+        'arseblograting', and 'userrating'
+    by : {'player', 'aggregate'}
+        Indicate whether you want summary stats player-wise or for the whole group
+    
+    Returns
+    -------
+    summary_df : pandas DataFrame
+        A dataframe summarizing the ratings for each player in the input dataframe or the whole group
+    """
+    if by=='player':
+        summary_df = df.groupby(['name']).agg({'name': 'size',
+                                               'userrating': ['mean','median','min','max'],
+                                               'arseblograting': ['mean','median','min','max']}
+                                             ).rename(columns={'name':'appearances'}
+                                                     )
+    elif by=='aggregate':
+        summary_df = df[['userrating','arseblograting']].agg({'userrating':['size','mean','median','min','max'], 
+                                                              'arseblograting':['size','mean','median','min','max']})
+        summary_df = summary_df.unstack().to_frame().T
+    return summary_df
 
 ##############################################################################
 
