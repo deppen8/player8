@@ -4,7 +4,6 @@ title: player8project
 subtitle: A project to study the wisdom of Arsenal fans
 use-site-title: true
 ---
-
 # Overview
 I believe that we can leverage data from fan ratings of their favorite football team. For instance, fan ratings could be used to:
 - understand how fans view individual players.
@@ -24,6 +23,6 @@ I believe that we can leverage this dataset in a variety of ways. For instance, 
 This project will attempt to explore these ideas and more from both the individual player and team perspectives.
 
 ## Footnotes 
-[1] I am deeply grateful to Andrew Mangan and the rest of the Arseblog.com team for allowing me to use this data. You can support their work at [patreon.com/arseblog](https://www.patreon.com/arseblog).
+<sup>[1]</sup> I am deeply grateful to Andrew Mangan and the rest of the Arseblog.com team for allowing me to use this data. You can support their work at [patreon.com/arseblog](https://www.patreon.com/arseblog).
 
-[2] See this article from Slate for a quick history of 0-10 player ratings. It also does well to recognize the wild subjectivity of a single person's rankings while still arguing for their utility.
+<sup>[2]</sup> See this article from Slate for a quick history of 0-10 player ratings. It also does well to recognize the wild subjectivity of a single person's rankings while still arguing for their utility.
