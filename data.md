@@ -4,6 +4,9 @@ title: data
 subtitle: notes on the dataset
 use-site-title: true
 ---
+After every Arsenal match, [Arseblog](https://news.arseblog.com/category/players/player-ratings/) <sup>[<a href="#n1">1</a>]</sup> posts ratings using the common 0-10 scale <sup>[<a href="#n2">2</a>]</sup> for all the Arsenal players who appeared in the match. Beginning in January 2014, Arseblog added the option for readers to submit their own ratings. The averages of these fan ratings are published alongside the author's ratings.
+
+Arseblog has published player ratings like this for over 200 Arsenal matches, so there are more than 3,000 documented player appearances, each with two associated ratings: one from Arseblog, one from the fans.
 
 Arseblog.com has a dedicated section for all of the [Player Ratings](https://news.arseblog.com/category/players/player-ratings/) posts. Each of these posts is formatted in similar ways, so I was able to write a Python web scraper script that, given the URL of the specific page, extracts the following information:
 - For each player that appeared in the match:
@@ -42,3 +45,6 @@ There are some minimal data checks built into the scraper code, but, in general,
 - Here is how I conceived of the difference between `positions` and `rare_positions`: `rare_positions` are `positions` where a player might have played but it would be a surprise to see them starting there on the teamsheet.
 - I have not confirmed that all Arsenal matches are included in the database. I am relying on the assumption that all games where Arseblog did ratings are included under the [Player Ratings](https://news.arseblog.com/category/players/player-ratings/) section of the website.
 
+### Notes
+<a name="n1">[1]</a> I am deeply grateful to Andrew Mangan and the rest of the Arseblog.com team for allowing me to use this data. You can support their work at <a href="https://www.patreon.com/arseblog" target="_blank">patreon.com/arseblog</a>.<br/>
+<a name="n2">[2]</a> See <a href="http://www.slate.com/articles/sports/sports_nut/2011/09/lionel_messi_goes_to_11.html" target="_blank">this article from Slate</a> for a quick history of 0-10 player ratings. It also does well to recognize the wild subjectivity of a single person's rankings while still arguing for their utility.</p>
