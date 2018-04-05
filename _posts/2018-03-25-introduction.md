@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Introduction to the project
+subtitle: ...and a bit about me
+tags: [about me, Fans Scouting Report]
 ---
 
 This project is an attempt to draw some insights about Arsenal Football Club from a unique perspective. I've been a devoted Arsenal fan
