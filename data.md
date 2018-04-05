@@ -46,5 +46,6 @@ There are some minimal data checks built into the scraper code, but, in general,
 - I have not confirmed that all Arsenal matches are included in the database. I am relying on the assumption that all games where Arseblog did ratings are included under the [Player Ratings](https://news.arseblog.com/category/players/player-ratings/) section of the website.
 
 ### Notes
-<a name="n1">[1]</a> I am deeply grateful to Andrew Mangan and the rest of the Arseblog.com team for allowing me to use this data. You can support their work at <a href="https://www.patreon.com/arseblog" target="_blank">patreon.com/arseblog</a>.<br/>
-<a name="n2">[2]</a> See <a href="http://www.slate.com/articles/sports/sports_nut/2011/09/lionel_messi_goes_to_11.html" target="_blank">this article from Slate</a> for a quick history of 0-10 player ratings. It also does well to recognize the wild subjectivity of a single person's rankings while still arguing for their utility.</p>
+<a name="n1">[1]</a> I am deeply grateful to Andrew Mangan and the rest of the Arseblog.com team for allowing me to use this data. You can support their work at <a href="https://www.patreon.com/arseblog" target="_blank">patreon.com/arseblog</a>.
+
+<a name="n2">[2]</a> See <a href="http://www.slate.com/articles/sports/sports_nut/2011/09/lionel_messi_goes_to_11.html" target="_blank">this article from Slate</a> for a quick history of 0-10 player ratings. It also does well to recognize the wild subjectivity of a single person's rankings while still arguing for their utility.

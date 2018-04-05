@@ -23,8 +23,8 @@ description: A project to study the wisdom of Arsenal fans
 
 # List of links in the navigation bar
 navbar-links:
-  home: "index"
-  blog: "blog/index.html"
+  blog: "index"
+  about: "about"
   data: "data"
   code: "code"
 #  About Me: "aboutme"
