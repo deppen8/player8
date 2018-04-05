@@ -1,10 +1,10 @@
 ---
 layout: page
 title: about
-subtitle: what this is all about
+subtitle: project overview
 ---
 
-<p>This project explores fan ratings of players from their (and my) favorite football team, <a href="https://www.arsenal.com" target="_blank">Arsenal Football Club</a>. The data comes from <a href="https://arseblog.com" target="_blank">Arseblog.com</a> <sup>[<a href="#n1">1</a>]</sup>, an award-winning blog that focuses on Arsenal and has a massive reach (<a href="./data.md">read about the dataset</a>). Some of the things these fan ratings can be used for include:</p>
+<p>This project explores fan ratings of players from their (and my) favorite football team, <a href="https://www.arsenal.com" target="_blank">Arsenal Football Club</a>. The data comes from <a href="https://arseblog.com" target="_blank">Arseblog.com</a> <sup>[<a href="#n1">1</a>]</sup>, an award-winning blog that focuses on Arsenal and has a massive reach (<a href="data.md">read about the dataset</a>). Some of the things these fan ratings can be used for include:</p>
 <ul>
 <li>understanding how fans view individual players.</li>
 <li>studying how fan perceptions change over time.</li>
