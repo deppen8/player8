@@ -478,3 +478,12 @@ def white2red():
                                 '#ee0000', 
                                 '#cc0000'])
     return w2r_palette
+
+##############################################################################
+
+def spi_load(fpath):
+    spi = pd.read_csv(fpath)
+    arse_matches = spi[(spi['team1']=='Arsenal') | (spi['team2']=='Arsenal')]
+    return arse_matches
+
+##############################################################################

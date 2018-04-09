@@ -108,7 +108,7 @@ url-pretty: "deppen8.github.io/player8"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-117265448-1"
 
 # Google Tag Manager ID
 #gtm: ""

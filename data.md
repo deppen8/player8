@@ -43,7 +43,8 @@ There are some minimal data checks built into the scraper code, but, in general,
 - For players that wore more than one number at Arsenal, I have recorded the most recent number they've worn or the last number they wore before leaving the club. For example, Alexis Sanchez is associated with number 7, not 17.
 - Player positions are assigned mostly from memory, so are open to interpretation. For some young players who made few appearances for the first team (and often not in their natural preferred position), I used the positions defined for them on transfermarkt.co.uk.
 - Here is how I conceived of the difference between `positions` and `rare_positions`: `rare_positions` are `positions` where a player might have played but it would be a surprise to see them starting there on the teamsheet.
-- I have not confirmed that all Arsenal matches are included in the database. I am relying on the assumption that all games where Arseblog did ratings are included under the [Player Ratings](https://news.arseblog.com/category/players/player-ratings/) section of the website.
+- I have not confirmed that all Arsenal matches are included in the database. I am relying on the assumption that all games where Arseblog did ratings are included under the [Player Ratings](https://news.arseblog.com/category/players/player-ratings/) section of the website. I have discovered that the following matches do not have ratings associated with them:
+    - 19 August, 2017, Stoke 1 - 0 Arsenal
 
 ### Notes
 <a name="n1">[1]</a> I am deeply grateful to Andrew Mangan and the rest of the Arseblog.com team for allowing me to use this data. You can support their work at <a href="https://www.patreon.com/arseblog" target="_blank">patreon.com/arseblog</a>.
